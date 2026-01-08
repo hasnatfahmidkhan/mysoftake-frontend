@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-primary: #1f2a3a;
+  --color-secondary: #caf0f8;
+  --color-base-100: #caf0f833;
+  --color-base-content: #1a202c;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-primary: #1f2a3a;
+  --color-secondary: #2a3234;
+  --color-base-100: #2a3234;
+  --color-base-200: #caf0f880;
+  --color-base-content: #ffffff;
+}
+
+body,
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@utility btn-gradient-blue {
+  background: linear-gradient(to right, #003da5, #0077b6);
+  @apply text-white border-none;
+}
+
+@utility btn-gradient-purple {
+  background: linear-gradient(to right, #f76680, #57007b);
+  @apply text-white border-none;
+}
+
+@utility text-gradient-blue {
+  background: linear-gradient(to right, #003da5, #0077b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,14 @@
+.happy-clients-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #9ca3af; /* gray-400 */
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.happy-clients-pagination .swiper-pagination-bullet-active {
+  background: #1e3a8a;
+  /* blue-900 */
+  width: 12px;
+  height: 12px;
+}
