@@ -3,11 +3,8 @@ import Navbar from "../../pages/Home/shared/Navbar/Navbar";
 import Footer from "../../pages/Home/shared/Footer/Footer";
 import SidebarContent from "./SidebarContent";
 import ScrollToTop from "../../component/ScrollToTop/ScrollToTop";
-import { Calendar, Clock } from "lucide-react"; // আইকনের জন্য (অথবা আপনার SVG ব্যবহার করুন)
 
 const ScheduleLayout = () => {
-  // মোবাইল ট্যাবের জন্য মেনু আইটেমগুলো এখানে ডিফাইন করা হলো
-  // (SidebarContent এর সাথে মিল রেখে পাথগুলো ঠিক রাখবেন)
   const mobileTabs = [
     {
       name: "Schedule",
